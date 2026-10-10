@@ -1,0 +1,34 @@
+{
+  "name": "dev-junior-challenge",
+  "version": "1.0.0",
+  "description": "Olá! Este desafio faz parte do nosso processo seletivo. O objetivo **não** é acertar\r tudo nem impressionar com complexidade — queremos entender como você pensa, organiza\r o código e comunica o que fez. Um projeto pequeno, funcional e bem explicado é\r exatamente o que procuramos.",
+  "homepage": "https://github.com/DanielSanLopes/dev-junior-challenge#readme",
+  "bugs": {
+    "url": "https://github.com/DanielSanLopes/dev-junior-challenge/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielSanLopes/dev-junior-challenge.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:api && npm run start:front",
+    "test": "npm run test:api && npm run test:front",
+    "build": "npm run build:api && npm run build:front",
+
+    "test:api": "cd /api && npm run test",
+    "test:front": "cd /front && npm run test",
+
+    "start:api": "cd api/ && npm start",
+    "start:front": "cd front/ && npm run dev",
+
+    "build:api": "cd api/ && npm run build",
+    "build:front": "cd front/ && npm run build"
+  },
+  "dependencies": {
+    "@nestjs/cli": "^12.0.8"
+  }
+}
