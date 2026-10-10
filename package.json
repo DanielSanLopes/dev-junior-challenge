@@ -15,20 +15,18 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "npm run start:api && npm run start:front",
-    "test": "npm run test:api && npm run test:front",
-    "build": "npm run build:api && npm run build:front",
-
-    "test:api": "cd /api && npm run test",
-    "test:front": "cd /front && npm run test",
-
+    "start": "concurrently \"npm run start:api\" \"npm run start:front\"",
+    "test": "concurrently \"npm run test:api\" \"npm run test:front\"",
+    "build": "concurrently \"npm run build:api\" \"npm run build:front\"",
+    "test:api": "cd api/ && npm run test",
+    "test:front": "cd front/ && npm run test",
     "start:api": "cd api/ && npm start",
     "start:front": "cd front/ && npm run dev",
-
     "build:api": "cd api/ && npm run build",
     "build:front": "cd front/ && npm run build"
   },
   "dependencies": {
-    "@nestjs/cli": "^12.0.8"
+    "@nestjs/cli": "^12.0.8",
+    "concurrently": "^10.0.6"
   }
 }
