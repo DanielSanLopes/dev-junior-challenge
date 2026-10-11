@@ -27,8 +27,9 @@ services:
   # api:
   #   build: ./api
   #   environment:
+  #     PROD:1
   #     CADASTRO_URL: http://mock-service:4000
-  #     # DATABASE_URL: postgres://desafio:desafio@db:5432/checkin  (se usar banco)
+  #     DATABASE_URL: postgres://desafio:desafio@db:5432/checkin  (se usar banco)
   #   ports:
   #     - "3000:3000"
   #   depends_on:
@@ -36,6 +37,9 @@ services:
   
   # front:
   #   build: ./front
+  #   environment:
+  #     PROD:1
+  #     API_URL: http://api:3000
   #   ports:
   #     - "5173:5173"
   #   depends_on:
