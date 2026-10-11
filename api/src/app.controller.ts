@@ -22,10 +22,10 @@ export class AppController {
     return this.appService.setcheck(cpf);
   }
 
-  // @Get('getchecklist')
-
-  // async getchecklist(): Promise<string>{
-  //   return this.appService.getchecklist();
-  // }
+  @Get('getchecklist')
+  @Header('Content-type', 'application/json; charset=utf-8')
+  async getchecklist(): Promise<object|any[]>{
+    return this.appService.getchecklist();
+  }
   
 }

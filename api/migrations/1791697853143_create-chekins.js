@@ -17,16 +17,6 @@ export const up = (pgm) => {
         dataNascimento: {type: 'date', notNull: true},
         horaCheking: {type: 'timestamp', notNull:true, default:pgm.func('now()')}
     })
-
-    pgm.dropTable('chekins')
-
-    pgm.createTable('checkins', {
-        id:'id',
-        cpf: {type: 'varchar(11)', notNull:true},
-        nome: {type: 'text', notNull: true},
-        dataNascimento: {type: 'date', notNull: true},
-        horaCheking: {type: 'timestamp', notNull:true, default:pgm.func('now()')}
-    })
 };
 
 /**

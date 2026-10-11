@@ -91,7 +91,25 @@ export class AppService {
       }  
   }
 
-  async getchecklist():Promise<any>{
+  async getchecklist():Promise<object|any[]>{
+    const checklist = await this.pool.query(`SELECT * FROM checkins ORDER BY "horaChekin"`)
 
+    if(checklist.rowCount == null && checklist.rowCount == undefined)
+      return{
+        status:500,
+        error: "Internal server error",
+        message: "Não foi possível concluir a solicitação",
+      }
+    
+    if(checklist.rowCount == 0)
+      return{
+        status:404,
+        error: "Not Found",
+        message: "Não há nenhum checkin registrado",
+      }
+
+    console.log(checklist.rows)
+
+    return checklist.rows
   }
 }
