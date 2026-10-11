@@ -1,14 +1,20 @@
 
-
+ol{
+    list-style: none;
+    justify-content:left;
+    padding-inline-start: 0px;;
+}
 
 #center {
   display: flex;
   flex-direction: row;
   gap: 25px;
   place-content: space-evenly;
-  place-items: center;
+  place-items: start;
+  padding-block: 80px;
   flex-grow: 1;
   text-align: left;
+  height:calc(100vh - 160px);
 
   @media (max-width: 1024px) {
     padding: 32px 20px 24px;
@@ -16,3 +22,42 @@
   }
 }
 
+.half-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+.input-text{
+  background-color: whitesmoke;
+  height: 30px;
+  width: 240px;
+  color: black;
+  font-size: large;
+  letter-spacing:7px;
+  margin-bottom: 10px;
+}
+
+.input-button{
+  background-color:darkslategrey;
+  height: 30px;
+  width: 120px;
+  color: whitesmoke;
+  font-size: large;
+  letter-spacing:7px;
+  margin-left: 2px;
+}
+
+.input-button:hover{
+  cursor: pointer;
+}
+
+#list-container{
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  height: 100%;
+  min-height: 100%;  
+  overflow-y: scroll;
+}

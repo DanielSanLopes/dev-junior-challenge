@@ -6,20 +6,15 @@ function Checkin({data}) {
 
   return (
     <>
-      <div id="checkin-list">
-        <ol>
-          {
-            data.map((value, index) =>(
-              <li key={index} id={index}>
-                {value}
-              </li>
-            ))
-          }
-
-        </ol>
-      </div>      
+      {
+        data.map((value, index)=>(
+          <li key={index} className='list-item'>
+            {value}
+          </li>
+        ))
+      }
     </>
   )
 }
 
-export default App
+export default Checkin

@@ -23,7 +23,7 @@ services:
   # EXEMPLO (descomente e ajuste, se for usar Docker).
   # A URL do serviço externo, a partir da sua api, é http://mock-service:4000
   # (nome do serviço na rede do compose).
-  #
+  
   # api:
   #   build: ./api
   #   environment:
@@ -33,9 +33,9 @@ services:
   #     - "3000:3000"
   #   depends_on:
   #     - mock-service
-  #
-  # web:
-  #   build: ./web
+  
+  # front:
+  #   build: ./front
   #   ports:
   #     - "5173:5173"
   #   depends_on:
