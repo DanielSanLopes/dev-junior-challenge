@@ -12,7 +12,7 @@ import {Pool} from 'pg';
       provide: Pool,
       useFactory: ()=>
         new Pool({
-          connectionString:'postgres://desafio:desafio@db:5432/checkin'
+          connectionString:'postgres://desafio:desafio@localhost:5432/checkin'
         })
     }
   ],

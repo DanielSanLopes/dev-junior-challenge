@@ -8,9 +8,12 @@ export class AppService {
 
   getHello(): string {
     return (
-      `/health: verify if API is on with database connected\n
+      `<pre>
+       \n
+       /health: verify if API is on with database connected\n
        /setcheck/:cpf: receipts the CPF number, consults the cadaster and put in the checkin list\n
        /getchecklist: returns the list of the registered checkins\n
+       </pre>
        `);
   }
 

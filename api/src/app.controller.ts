@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  @Header('Content-type', 'text/plain; charset=utf-8')
+  @Header('Content-type', 'text/html; charset=utf-8')
   getHello(): string {
     return this.appService.getHello();
   }
