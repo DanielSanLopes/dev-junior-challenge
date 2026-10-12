@@ -3,7 +3,7 @@
 > Preencha este arquivo. Ele nos ajuda a rodar e entender o seu projeto.
 
 ## Como rodar
-Depende. 
+Depende. <br/>
 Caso queria rodar cada projeto sem o docker, primeiro rode os serviços base do mock e do banco:
 `docker compose up mock-service db`
 `npm run start:api`
@@ -31,7 +31,7 @@ Caso queira executar tudo de uma só vez, basta usar o docker subindo todos os s
     
 
 ## Onde guardei os dados
-**Banco**
+**Banco**<br/>
 Maior organização, persistência e melhor controle da estrutura dos dados, além de certas automatizações como o __'auto_increment'__ na coluna de __id__ e o valor default para a hora do checkin com `now()` na coluna __horaCheckin__
 
 ## Decisões e dificuldades
