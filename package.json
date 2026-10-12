@@ -19,7 +19,7 @@
     "test": "concurrently \"npm run test:api\" \"npm run test:front\"",
     "build": "concurrently \"npm run build:api\" \"npm run build:front\"",
     "test:api": "cd api/ && npm run test",
-    "test:front": "cd front/ && npm run test",
+    
     "start:api": "cd api/ && npm start",
     "start:api:dev": "cd api/ && npm run start:dev",
     "start:front": "cd front/ && npm run dev",

@@ -45,7 +45,7 @@ export class AppService {
     }else{
       server = 'http://localhost:4000'
     }
-    console.log("CPF: ", cpf)
+    // console.log("CPF: ", cpf)
     const endpoint = "pacientes/"
     const response = await fetch(`${server}/${endpoint}${cpf}`)
 
@@ -66,7 +66,7 @@ export class AppService {
     } 
     
     const data = await response.json()
-    console.log(data)
+    // console.log(data)
 
     const check = {
       cpf: data.cpf,
@@ -111,7 +111,7 @@ export class AppService {
         message: "Não há nenhum checkin registrado",
       }
 
-    console.log(checklist.rows)
+    // console.log(checklist.rows)
 
     return checklist.rows
   }
