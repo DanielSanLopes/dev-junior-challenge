@@ -92,7 +92,7 @@ export class AppService {
   }
 
   async getchecklist():Promise<object|any[]>{
-    const checklist = await this.pool.query(`SELECT * FROM checkins ORDER BY "horaChekin"`)
+    const checklist = await this.pool.query(`SELECT * FROM checkins ORDER BY "horaCheckin"`)
 
     if(checklist.rowCount == null && checklist.rowCount == undefined)
       return{
