@@ -24,29 +24,29 @@ services:
   # A URL do serviço externo, a partir da sua api, é http://mock-service:4000
   # (nome do serviço na rede do compose).
   
-  # api:
-  #   build: ./api
-  #   environment:
-  #     CADASTRO_URL: http://mock-service:4000
-  #     CORS_ORIGIN:http://front:5173
-  #     LOCAL_CORS_ORIGIN:http://localhost:5173
-  #     DATABASE_URL:postgres://desafio:desafio@db:5432/checkin
-  #     PROD:1
-  #   ports:
-  #     - "3000:3000"
-  #   depends_on:
-  #     - mock-service
+  api:
+    build: ./api
+    environment:
+      CADASTRO_URL: http://mock-service:4000
+      CORS_ORIGIN: http://localhost:5173
+      LOCAL_CORS_ORIGIN:http: //localhost:5173
+      DATABASE_URL: postgres://desafio:desafio@db:5432/checkin
+      PROD: 1
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mock-service
   
-  # front:
-  #   build: ./front
-  #   environment:
-  #     VITE_API_URL:http://api:3000/
-  #     VITE_LOCALHOST_URL:http://localhost:3000/
-  #     VITE_PROD:1
-  #   ports:
-  #     - "5173:5173"
-  #   depends_on:
-  #     - api
+  front:
+    build: ./front
+    environment:
+      VITE_API_URL: http://localhost:3000/
+      VITE_LOCALHOST_URL: http://localhost:3000/
+      VITE_PROD: 1
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api
   # ------------------------------------------------------------------
 
 volumes:

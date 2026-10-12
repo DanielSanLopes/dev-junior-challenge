@@ -87,7 +87,7 @@ function App() {
         </div>
 
         <div className='half-container' id='list'>
-          <h2>Check-in</h2>
+          <h2>Check-in's</h2>
           
           <ol id='list-container'>
             <Checkin data={data}/>
