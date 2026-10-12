@@ -4,12 +4,12 @@
 
 ## Como rodar
 **Depende.** <br/>
-Caso queria rodar cada projeto sem o docker, primeiro rode os serviços base do mock e do banco:
-`docker compose up mock-service db`
-`npm run start:api`
+Caso queria rodar cada projeto sem o docker, primeiro rode os serviços base do mock e do banco:<br/>
+`docker compose up mock-service db`<br/>
+`npm run start:api`<br/>
 `npm run start:front`
 
-Caso queira executar tudo de uma só vez, basta usar o docker subindo todos os serviços:
+Caso queira executar tudo de uma só vez, basta usar o docker subindo todos os serviços: <br/>
 `docker compose up`
 
 ## O que foi feito
