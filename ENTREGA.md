@@ -10,24 +10,24 @@ Caso queria rodar cada projeto sem o docker, primeiro rode os serviços base do 
 `npm run start:front`
 
 Caso queira executar tudo de uma só vez, basta usar o docker subindo todos os serviços: <br/>
-`docker compose up`
+`docker compose up` _(extra)_
 
 ## O que foi feito
 - **Front-end**: 
     - campo para inserir o CPF
     - lista dos checkins já realizados
-    - Mensagens de erro
+    - Mensagens de erro _(extra)_
 - **Back-end com Nest**:
     - endpoint `setcheckin/:cpf (POST)` para cadastro de novo checkin
     - endpoint `getcheckins (GET)` para listar todos os checkins já realizados (ordenados pela hora do checkin)
-    - uso de banco de dados Postgres
-    - Migrations de manipulação do banco utilizando node-pg-migrate
-    - Testes unitários simples com os endpoints:
+    - uso de banco de dados Postgres _(extra)_
+    - Migrations de manipulação do banco utilizando node-pg-migrate _(extra)_
+    - Testes unitários simples com os endpoints: _(extra)_
         - Na pasta raíz: `npm run test:api`
 - **Geral**:
-    - serviços subidos com docker
-    - configuração de comandos personalizados no `package.json`
-    - utilização de variáveis de ambiente com dotenv (diferenciação entre ambientes)
+    - serviços subidos com docker _(extra)_
+    - configuração de comandos personalizados no `package.json` _(extra)_
+    - utilização de variáveis de ambiente com dotenv (diferenciação entre ambientes) _(extra)_
     
 
 ## Onde guardei os dados
