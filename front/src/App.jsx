@@ -88,12 +88,12 @@ function App() {
 
         <div className='half-container' id='list'>
           <h2>Check-in</h2>
+          
           <ol id='list-container'>
             <Checkin data={data}/>
           </ol>
           
         </div>
-
       </section>      
     </>
   )

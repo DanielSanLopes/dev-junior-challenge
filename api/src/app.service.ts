@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { error } from 'console';
 import { Pool } from 'pg';
 
@@ -20,6 +20,9 @@ export class AppService {
 
   async health(): Promise<string> {
     const result = await this.pool.query('SELECT NOW()');
+    if (result?.rowCount != 1){
+      throw new InternalServerErrorException('Não foi possível verificar o Postgres');
+    }
     return `API on. Connected to Postgres at: ${result.rows[0].now}`;
   }
   
