@@ -50,6 +50,6 @@ Maior organização, persistência e melhor controle da estrutura dos dados, al�
 - Paginação: com o crescente dos checkins, carregá-los tods de uma vez acabaria por demorar muito. Então o faria aos poucos
 - useContext: organizaria melhor as responsabilidades no front, usando useContext para exportar métodos e dados para pode limpar os componentes e focá-los apenas na renderização e processamento pontual/final
 - Mais testes: faria testes end-to-end para verificar o funcionamento do back-end inteiro e verificaria a possibilidade de melhores testes automatizados; e o mesmo para o front-end
-- Autenticação e autorização: claroo, provavelmente eu precisaria estudar um pouco mais e ter bem mais tempo (para fazer telas, condições, middlewares, etc), mas seria legal.
+- Autenticação e autorização: claro, provavelmente eu precisaria estudar um pouco mais e ter bem mais tempo (para fazer telas, condições, middlewares, etc), mas seria legal.
 - Maior entendimento sobre o funcionamente do Docker e do Nest: esturaria cada estapa do que estivesse fazendo bem mais a fundo, para entender como tudo funciona por baixo dos panos
 - Pipeline de CI/CD + Deploy: deixaria a aplicação disponível online com um fluxo automatizado com, provavelmente, Vercel, Github Actions e Neon databases. O problema disso seria recriar o serviço do mock e executar o seu deploy. Uma alternativa a isso seria subir os contâineres Docker em um orquestrador, mas é possível que levaria ainda mais tempo simplesmente porquê nunca fiz isso (deve ser fácil, mé mais uma questão de conhecer a ferramenta)
