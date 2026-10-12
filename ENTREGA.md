@@ -21,13 +21,13 @@ Caso queira executar tudo de uma só vez, basta usar o docker subindo todos os s
     - endpoint `setcheckin/:cpf (POST)` para cadastro de novo checkin
     - endpoint `getcheckins (GET)` para listar todos os checkins já realizados (ordenados pela hora do checkin)
     - uso de banco de dados Postgres _(extra)_
-    - Migrations de manipulação do banco utilizando node-pg-migrate _(extra)_
+    - Migrations de manipulação do banco utilizando node-pg-migrate
     - Testes unitários simples com os endpoints: _(extra)_
         - Na pasta raíz: `npm run test:api`
 - **Geral**:
     - serviços subidos com docker _(extra)_
-    - configuração de comandos personalizados no `package.json` _(extra)_
-    - utilização de variáveis de ambiente com dotenv (diferenciação entre ambientes) _(extra)_
+    - configuração de comandos personalizados no `package.json`
+    - utilização de variáveis de ambiente com dotenv (diferenciação entre ambientes)
     
 
 ## Onde guardei os dados
